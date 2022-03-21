@@ -1,0 +1,15 @@
+
+1. Singleton driver ureten bir Driver classi olusturun
+2. Utils icinde bir Parent class olusturun
+    WebDriver, WebDriverWait ve metotlar bu class ta olacak
+    Test classlariniz Parent class"i extend edecek.
+
+3. Parent class"da olacaklar
+  fields : driver, wait,
+  metotlar : clickTo(); sendKeysTo(); waitFor(); (kousalim)
+
+4. http://opencart.abstracta.us/index.php?route=common/home  adresine gidip
+   a. menu islemlerini assert edin.
+
+5. AnaMenu uzerinde hover yapınca alt menusu varsa acildigini assert edin.
+   ParentClass"a hover methodu ekleyin.

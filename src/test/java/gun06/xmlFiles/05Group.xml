@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Group Test2">
+
+    <test name="Test-1" verbose="2" preserve-order="true">
+        <groups>
+            <run>
+                <include name="TestGroup1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="gun06.tests.TestClass1"/>
+            <class name="gun06.tests.TestClass2"/>
+        </classes>
+    </test>
+
+    <test name="Test 2" verbose="2" preserve-order="true">
+        <groups>
+            <run>
+                <include name="TestGroup2"/>
+                <include name="TestGroup3"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="gun06.tests.TestClass1">
+                <methods>
+                    <exclude name="test2"/>
+                </methods>
+            </class>
+            <class name="gun06.tests.TestClass2"/>
+        </classes>
+    </test>
+
+</suite>
