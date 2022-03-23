@@ -48,7 +48,7 @@ public class TestClass4 {
        driver.findElement(By.cssSelector("#search input")).sendKeys(text+ Keys.ENTER);
        System.out.println("search Text: "+str);
    }
-   @AfterSuite
+   @AfterTest
    @Parameters("browserName")
     public void afterTest(String bName){
        try {
@@ -57,7 +57,7 @@ public class TestClass4 {
            e.printStackTrace();
        }
        System.out.println("Method: "+bName);
-       driver.quit();
+       Driver.quitDriver();
    }
 
 }

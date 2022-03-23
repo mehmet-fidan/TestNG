@@ -1,0 +1,16 @@
+
+
+1. bir Pakacge acin
+2. BaseTestClass acin
+
+   @Before
+      String browser alsin ve driver tanimlansin.
+   æAfter....
+
+3. TestLogin
+    @Test
+    kullanici ve sifre parametreli olsun
+
+4. TestContact
+   contact ile iletisim
+
