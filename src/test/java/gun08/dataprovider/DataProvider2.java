@@ -38,7 +38,7 @@ public class DataProvider2  {
                 {"eneal8@drupal.org", "bwwy0aBJIJ", 0},
                 {"bdorkena@github.com", "8AjXlD6", 0},
                 {"hbendb@imdb.com", "mCdonxCK2Ix", 0},
-                {"m.fidan.2121@hotmail.com", "123456", 1},
+                {"ZeydinToprak@hotmail.com", "123456", 1},
         };
         return data;
 

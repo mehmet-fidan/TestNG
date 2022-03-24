@@ -34,7 +34,6 @@ public class SitePage {
 
     public void goToUrl() {
         driver.get(url);
-        driver.manage().window().maximize();
     }
 
     public void loginTo(String username, String password ) {

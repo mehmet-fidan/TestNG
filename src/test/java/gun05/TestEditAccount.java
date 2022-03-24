@@ -26,7 +26,7 @@ public class TestEditAccount extends ParentClass {
     @Test
     public void test_Login(){
         homePage.goToLogin();
-        homePage.LoginAs("m.fidan.2121@hotmail.com","123456");
+        homePage.LoginAs("ZeydinToprak@hotmail.com","123456");
     }
 
     @Test
