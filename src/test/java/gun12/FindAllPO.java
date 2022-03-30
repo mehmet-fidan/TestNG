@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
@@ -30,7 +31,14 @@ public class FindAllPO {
             @FindBy(css = ".caption h4"),
             @FindBy(css = "div.caption p.price")
     } )
+
     private List<WebElement> isimVeFiyat;
+
+    @FindBys({
+            @FindBy(xpath = "(//div[@class='product-thumb'])[2]"),
+            @FindBy(css = "h4")
+    } )
+    private WebElement findBys;
 
     public WebElement getSearchText() {
         return searchText;
@@ -50,5 +58,9 @@ public class FindAllPO {
 
     public List<WebElement> getIsimVeFiyat() {
         return isimVeFiyat;
+    }
+
+    public WebElement getFindBys() {
+        return findBys;
     }
 }
